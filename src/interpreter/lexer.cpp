@@ -49,15 +49,16 @@ std::vector<Token> tokenize(std::string expr)
                 token_vector.push_back(create_token_op(TokenType::TokenPlus));
                 break;
             case '-':
-                token_vector.push_back(create_token_op(TokenType::TokenPlus));
+                token_vector.push_back(create_token_op(TokenType::TokenMinus));
                 break;
             case '*':
-                token_vector.push_back(create_token_op(TokenType::TokenPlus));
+                token_vector.push_back(create_token_op(TokenType::TokenMul));
                 break;
             case '/':
-                token_vector.push_back(create_token_op(TokenType::TokenPlus));
+                token_vector.push_back(create_token_op(TokenType::TokenDiv));
                 break;
         }
+
         pos++;
     }
 
