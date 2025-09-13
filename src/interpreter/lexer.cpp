@@ -20,7 +20,7 @@ std::vector<Token> tokenize(std::string expr)
     size_t pos = 0;
     while (pos < expr.length()) {
         // Number
-        if (isdigit(expr.at(pos))) {
+        if (isdigit(expr.at(pos)) || expr.at(pos) == '.') {
             size_t i = pos;
             bool decimal_point = false;
 
