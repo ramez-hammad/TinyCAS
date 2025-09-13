@@ -57,6 +57,9 @@ std::vector<Token> tokenize(std::string expr)
             case '/':
                 token_vector.push_back(create_token_op(TokenType::TokenDiv));
                 break;
+            case '^':
+                token_vector.push_back(create_token_op(TokenType::TokenPow));
+                break;
         }
 
         pos++;

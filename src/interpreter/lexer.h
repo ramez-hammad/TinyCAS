@@ -7,6 +7,7 @@ enum class TokenType
     TokenMinus,
     TokenMul,
     TokenDiv,
+    TokenPow,
     TokenNull
 };
 
