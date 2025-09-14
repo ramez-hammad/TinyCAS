@@ -17,6 +17,7 @@ enum class TokenType
     TokenLParen,
     TokenRParen,
     TokenEqual,
+    TokenComma,
     TokenSin,
     TokenCos,
     TokenTan,

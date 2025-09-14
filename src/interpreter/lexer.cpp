@@ -95,6 +95,9 @@ std::vector<Token> tokenize(std::string expr)
             case '=':
                 token_vector.push_back(create_token_op(TokenType::TokenEqual));
                 break;
+            case ',':
+                token_vector.push_back(create_token_op(TokenType::TokenComma));
+                break;
 
             // Functions
             case 's':
